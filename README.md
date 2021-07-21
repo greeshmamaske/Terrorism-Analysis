@@ -16,3 +16,5 @@ This project uses the [Global Terrorism Database](https://www.start.umd.edu/rese
 * Run *pip3 install -r requirements.txt* on your command line interface to set up the updated libraries and dependencies.
 * Enter *python main.py* into the CLI and the app should open in your default browser. 
 (*WARNING: App takes a long time to load and open; 30-45 seconds*)
+
+Download Dataset: https://docs.google.com/spreadsheets/d/1KB41pxD-ktJfp6kKo-fJV9hG22adeTeBUPpp65L7HRI/export?format=csv
