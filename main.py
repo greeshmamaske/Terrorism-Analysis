@@ -20,12 +20,22 @@ import plotly.graph_objects as go
 import matplotlib.pyplot as plt 
 import cufflinks as cf
 import seaborn as sns
+import os
+import psycopg2
 import webbrowser
 import plots
 import callbacks
 import layouts
 import logging
 
+DATABASE_URL = os.environ['DATABASE_URL']
+
+conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+cur = conn.cursor()
+
+df = pd.read_sql("select * from gtd", con)
+df99 = df
+df999 = df
 
 #Create dataframe of reduced csv
 url = "global_terror_2.csv"
